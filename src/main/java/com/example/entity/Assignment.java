@@ -15,6 +15,8 @@ import java.time.LocalDateTime;
 @Data
 @Builder
 @TableName("assignment")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Assignment {
     @TableId(value = "id",type = IdType.ASSIGN_ID)
     private Long id;

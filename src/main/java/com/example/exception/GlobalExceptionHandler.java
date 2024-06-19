@@ -12,6 +12,7 @@ public class GlobalExceptionHandler {//全局异常处理器
     public R<String> exceptionHandler(Exception exception){
         //打印异常信息
         exception.printStackTrace();
+        System.out.println(exception.getMessage());
         return R.error(exception.getMessage());
     }
 }

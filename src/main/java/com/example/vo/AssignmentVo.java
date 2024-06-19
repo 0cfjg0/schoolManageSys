@@ -1,14 +1,18 @@
 package com.example.vo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 
 @Data
 @Builder
 @TableName("assignment")
+@AllArgsConstructor
+@NoArgsConstructor
 public class AssignmentVo {
     private Long id;
 

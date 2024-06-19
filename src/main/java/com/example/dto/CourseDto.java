@@ -3,14 +3,18 @@ package com.example.dto;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 import java.util.Date;
 
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class CourseDto {
     private Long id;
 
@@ -18,7 +22,7 @@ public class CourseDto {
     private String name;
 
     //教师id
-    private Long teacher_id;
+    private Long teacherId;
 
     //开始日期
     private Date startDate;

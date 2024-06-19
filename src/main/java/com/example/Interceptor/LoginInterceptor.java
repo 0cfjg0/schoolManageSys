@@ -17,7 +17,7 @@ public class LoginInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object handler) throws Exception {//过滤前
         String url = httpServletRequest.getRequestURI();
         System.out.println(url);
-        if(url.matches(".?login.?") || url.matches(".?regist.?")){
+        if(url.matches(".?login.?") || url.matches(".?regist.?") || url.matches(".+job.+")){
             System.out.println("interceptor running");
             return true;//放行
         }else{

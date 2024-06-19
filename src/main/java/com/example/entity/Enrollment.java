@@ -12,6 +12,8 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @TableName("enrollment")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Enrollment {
     //学生id
     @MppMultiId

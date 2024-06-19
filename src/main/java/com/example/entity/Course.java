@@ -24,7 +24,7 @@ public class Course {
     private String name;
 
     //教师id
-    private Long teacher_id;
+    private Long teacherId;
 
     //开始日期
     private Date startDate;

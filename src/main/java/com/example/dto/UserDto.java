@@ -12,6 +12,8 @@ import java.sql.Timestamp;
 
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserDto {
     @TableId(value = "id",type = IdType.ASSIGN_ID)
     private Long id;

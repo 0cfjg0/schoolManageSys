@@ -8,6 +8,8 @@ class TestApplicationTests {
 
     @Test
     void contextLoads() {
+        String url = "/job/api/registry";
+        System.out.println(url.matches(".+job.+"));
     }
 
 }

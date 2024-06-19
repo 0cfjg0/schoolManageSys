@@ -17,3 +17,11 @@ mybatis:
 pagehelper:
   reasonable: true
 
+xxl:
+  job:
+    admin:
+      addresses: http://127.0.0.1:8081/xxl-job-admin  #xxl-job调度中心地址
+    executor:
+      ip: 127.0.0.1 #注册到调度中心的执行器ip地址
+      port: 9510
+      appname: cfjg-job #执行器的名称
