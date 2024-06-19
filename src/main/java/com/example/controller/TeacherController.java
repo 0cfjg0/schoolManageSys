@@ -139,6 +139,11 @@ public class TeacherController {
         return R.success("删除成功");
     }
 
+    /**
+     * 批改作业
+     * @param assignmentDto
+     * @return
+     */
     @PostMapping("/assign")
     public R<Void> assignHomeWork(@RequestBody AssignmentDto assignmentDto){
         Assignment assignment = BeanUtil.toBean(assignmentDto,Assignment.class);
