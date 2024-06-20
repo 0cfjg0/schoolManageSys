@@ -58,7 +58,7 @@ public class StudentController {
     public R<List<CourseVo>> checkCourse() {
         Long id = TokenUtil.getCurrentId(request);
         //检查缓存内数据
-        BoundValueOperations<String, String> opts = stringRedisTemplate.boundValueOps("student_course_list");
+        BoundValueOperations<String, String> opts = stringRedisTemplate.boundValueOps("student_course_list" + id);
         String redisData = opts.get();
         //获取缓存中的数据
         List<CourseVo> redisList = JSONUtil.parseArray(redisData)
